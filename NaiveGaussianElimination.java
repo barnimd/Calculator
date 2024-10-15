@@ -39,14 +39,14 @@ public class NaiveGaussianElimination {
 
         // Define the matrix of coefficients (can added more than 4x4
         double[][] a = {
-            {1, -1, 2, 1},  // Equation 1: x1 - x2 + 2x3 + x4 = 1
-            {3, 2, 1, 4},   // Equation 2: 3x1 + 2x2 + x3 + 4x4 = 1
-            {5, 8, 6, 3},   // Equation 3: 5x1 + 8x2 + 6x3 + 3x4 = 1
-            {4, 2, 5, 3}    // Equation 4: 4x1 + 2x2 + 5x3 + 3x4 = -1
+            {1, 2, 1},  // Equation 1: x1 - x2 + 2x3 + x4 = 1
+            {3, 1, 4},   // Equation 2: 3x1 + 2x2 + x3 + 4x4 = 1
+            {5, 6, 3},   // Equation 3: 5x1 + 8x2 + 6x3 + 3x4 = 1
+           
         };
 
         // Define the right-hand side values (b)
-        double[] b = {1, 1, 1, -1};  // Results of the 4 equations
+        double[] b = {1, 1,-1};  // Results of the 4 equations
 
         // Call the Gaussian Elimination function to solve the system
         gaussianElimination(a, b);
