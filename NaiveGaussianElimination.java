@@ -3,6 +3,7 @@ public class NaiveGaussianElimination {
     // Method to execute Gaussian Elimination
     public static void gaussianElimination(double[][] a, double[] b) {
         int n = b.length;  // Get the size of matrix
+        int q = 0;
 
         // Forward Elimination phase
         for (int k = 0; k < n - 1; k++) {  // Loop through each column (except the last one)
